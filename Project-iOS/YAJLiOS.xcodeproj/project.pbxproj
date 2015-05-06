@@ -643,7 +643,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0630;
 			};
 			buildConfigurationList = 1DEB922208733DC00010E9CD /* Build configuration list for PBXProject "YAJLiOS" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -829,7 +829,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00C4052E0FE77688003CE908 /* Shared-iOS.xcconfig */;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = YAJLiOSDevice;
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
@@ -837,7 +839,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00C4052E0FE77688003CE908 /* Shared-iOS.xcconfig */;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_NAME = YAJLiOSDevice;
+				SYMROOT = build;
 			};
 			name = Release;
 		};
@@ -846,7 +850,10 @@
 			baseConfigurationReference = 00C4052E0FE77688003CE908 /* Shared-iOS.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = "Info copy.plist";
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = YAJLiOSSimulator;
+				SKIP_INSTALL = YES;
+				SYMROOT = build;
 			};
 			name = Debug;
 		};
@@ -854,7 +861,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 00C4052E0FE77688003CE908 /* Shared-iOS.xcconfig */;
 			buildSettings = {
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = YAJLiOSSimulator;
+				SKIP_INSTALL = YES;
+				SYMROOT = build;
 			};
 			name = Release;
 		};
@@ -903,25 +913,29 @@
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = "/Users/karl.white/Dropbox/iPhoneApps/[GitHub]/tets/build";
 			};
 			name = Debug;
 		};
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SYMROOT = "/Users/karl.white/Dropbox/iPhoneApps/[GitHub]/tets/build";
 			};
 			name = Release;
 		};
